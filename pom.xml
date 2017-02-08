@@ -49,7 +49,6 @@
             <artifactId>thymeleaf</artifactId>
             <version>${thymeleaf.version}</version>
         </dependency-->
-
         <!--JUnit for Test-->
         <dependency>
             <groupId>junit</groupId>
