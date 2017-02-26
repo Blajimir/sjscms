@@ -6,6 +6,9 @@
 </head>
 <body>
 <h1 th:text="'Hello Spring!!!'">Hello static page!</h1>
-<p th:text="${hello}">Fail say hello</p>
+<div th:text="${hello}" th:remove="${hello}?none:all"><p>Fail say hello!</p><p>I am simple string!</p></div>
+<a th:href="@{/a/b/c}">abc</a>
+<a th:href="@{/a/b/c/{link}(link='fork')}">hello</a>
+<a th:href="@{/c/{int}/a(int=155)}">hello</a>
 </body>
 </html>

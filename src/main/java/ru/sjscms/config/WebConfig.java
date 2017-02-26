@@ -64,8 +64,14 @@ public class WebConfig extends WebMvcConfigurerAdapter{
         return viewResolver;
     }
 
+    /*@Override
+    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+        registry.addResourceHandler("/resources/**").addResourceLocations("/resources/");
+    }*/
+
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/resources/**").addResourceLocations("/resources/");
+        registry.addResourceHandler("/views/**").addResourceLocations("/WEB-INF/views/");
     }
 }
